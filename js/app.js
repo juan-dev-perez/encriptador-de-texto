@@ -1,5 +1,7 @@
 let inputTexto = document.getElementById('texto');
 let parrafoResultado = document.getElementById('resultado');
+const divSinResultado = document.getElementById('div-sin-resultado');
+const divConResultado = document.getElementById('div-con-resultado');
 
 function validarTexto(texto) {
 
@@ -48,7 +50,9 @@ function encriptarTexto(){
     });
 
     let resultado = textoCifrado.join('');
+    divSinResultado.style.display = 'none';
     parrafoResultado.innerHTML = resultado;
+    divConResultado.style.display = 'flex'; 
 }
 
 function desencriptarTexto(){

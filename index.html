@@ -23,12 +23,15 @@
                 </div>
             </div>
         </section>
-        <section class="seccion__derecha">
-            <p hidden id="resultado" ></p>
+        <section id="div-sin-resultado" class="seccion__derecha__sin_texto">
             <img class="imagen__ningun_mensaje" src="./assets/ningun-mensaje.png"/>
             <p class="texto__ningun__mensaje">Ningun mensaje fue encontrado</p>
             <p class="subtexto__ningun__mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
-            <button hidden onclick="copiarTexto()">copiar</button>
+            
+        </section>
+        <section hidden id="div-con-resultado" class="seccion__derecha__con__texto">
+            <p class="resultado" id="resultado"></p>
+            <button class="botones boton__copiar" onclick="copiarTexto()">Copiar</button>
         </section>
 
     </main>
