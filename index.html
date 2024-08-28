@@ -9,32 +9,34 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="logo">JD</h1>
-    </header>
-    <main class="contenedor">
-        <section class="seccion__izquierda">
-            <textarea class="texto__ingresado" id="texto" placeholder="Ingrese el texto aqui..."></textarea>
-            <div>
-                <p class="reglas"> <img class="icono__exclamacion" src="./assets/icono-exclamacion.png"/> Solo letras minusculas y sin acentos.</p>
-                <div class="div__botones">
-                    <button class="botones" onclick="encriptarTexto()">Encriptar</button>
-                    <button class="botones" onclick="desencriptarTexto()">Desencriptar</button>
+    <div class="contenido">
+        <header>
+            <h1 class="logo">JD</h1>
+        </header>
+        <main class="contenedor">
+            <section class="seccion__izquierda">
+                <textarea class="texto__ingresado" id="texto" placeholder="Ingrese el texto aqui..."></textarea>
+                <div>
+                    <p class="reglas"> <img class="icono__exclamacion" src="./assets/icono-exclamacion.png"/> Solo letras minúsculas y sin acentos.</p>
+                    <div class="div__botones">
+                        <button class="botones" onclick="encriptarTexto()">Encriptar</button>
+                        <button class="botones" onclick="desencriptarTexto()">Desencriptar</button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="div-sin-resultado" class="seccion__derecha__sin_texto">
-            <img class="imagen__ningun_mensaje" src="./assets/ningun-mensaje.png"/>
-            <p class="texto__ningun__mensaje">Ningun mensaje fue encontrado</p>
-            <p class="subtexto__ningun__mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+            </section>
+            <section id="div-sin-resultado" class="seccion__derecha__sin_texto">
+                <img class="imagen__ningun_mensaje" src="./assets/ningun-mensaje.png"/>
+                <p class="texto__ningun__mensaje">Ningun mensaje fue encontrado</p>
+                <p class="subtexto__ningun__mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+                
+            </section>
+            <section hidden id="div-con-resultado" class="seccion__derecha__con__texto">
+                <p class="resultado" id="resultado"></p>
+                <button class="botones boton__copiar" onclick="copiarTexto()">Copiar</button>
+            </section>
             
-        </section>
-        <section hidden id="div-con-resultado" class="seccion__derecha__con__texto">
-            <p class="resultado" id="resultado"></p>
-            <button class="botones boton__copiar" onclick="copiarTexto()">Copiar</button>
-        </section>
-
-    </main>
+        </main>
+    </div>
     <footer class="footer">
         <p>Desarrollado por Juan David Pérez</p>
     </footer>
